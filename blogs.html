@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard | Home</title>
+  <!-- Style fonts CDN Links here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Style design CDN Links here -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-[#f4f7ff] h-lvh font-poppins">
+  <header class="container mx-auto pt-1">
+    <nav class="mt-8 rounded-2xl bg-white text-gray-800 p-4 mb-4">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="flex items-center text-2xl"><img class="mr-4" src="assets/logo.png" alt="">Dev<span
+            class="text-2xl font-bold">Board</span></a>
+        <a href="index.html"><button class="btn bg-[#3752FD] outline-none border-none text-white">Back to
+            Desk</button></a>
+      </div>
+    </nav>
+    <section class="container mx-auto flex flex-wrap justify-between gap-2">
+      <main class="bg-white w-full gap-7 rounded-2xl">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 text-center">Our Blogs</h1>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" checked="checked" />
+          <div class="collapse-title border-b-gray-900 border text-xl font-medium">Question-1:
+            What are the different
+            ways to
+            select an element
+            in the DOM?</div>
+          <div class="collapse-content">
+            <p>There are 5 ways in which you can select elements in a DOM using selectors.</p>
+            <ul>
+              <li>getElementById()</li>
+              <li>getElementsByTagName()</li>
+              <li>getElementsByClassName()</li>
+              <li>querySelector()</li>
+              <li>querySelectorAll()</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" checked="checked"/>
+          <div class="collapse-title border-b-gray-900 border  text-xl font-medium">Question-2: What is the difference
+            between innerHTML,
+            innerText, and textContent ?</div>
+          <div class="collapse-content">
+            <p>In JavaScript, "innerHTML" retrieves the complete HTML content within an element, including tags, while
+              "innerText" only
+              retrieves the visible text content of an element (ignoring HTML tags), and "textContent" retrieves all
+              text content
+              within an element, including hidden text, but without interpreting any HTML tags;</p>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title border-b-gray-900 border text-xl font-medium">Question-3: What is event delegation
+            in the DOM?</div>
+          <div class="collapse-content">
+            <p>In the DOM, "event delegation" is a JavaScript design pattern where you attach a single event listener to
+              a parent
+              element instead of adding listeners to multiple child elements, allowing the parent to handle events that
+              occur on its
+              children by leveraging the "bubbling" phase of event propagation, where events travel up the DOM tree from
+              the target element to its ancestors; this is particularly useful when dealing with a large number of
+              similar child elements,
+              optimizing performance by reducing the number of event listeners needed.</p>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title border-b-gray-900 border text-xl font-medium">Question-4: What is event bubbling in
+            the DOM?</div>
+          <div class="collapse-content">
+            <p>Bubbling in the DOM is an event propagation method. It starts with an event triggering on the innermost
+              element and then
+              proceeds to trigger the same event on its parent element and then its parent's parent element and so on.
+            </p>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title border-b-gray-900 border text-xl font-medium">Question-5: How do you create, add,
+            and remove elements using
+            JavaScript?</div>
+          <div class="collapse-content">
+            <p>To add, remove, and modify HTML elements using JavaScript, you can use methods like createElement ,
+              appendChild ,
+              removeChild , and properties like innerHTML and textContent . For example, to add an element, you can
+              create it using
+              document. createElement and then append it to a parent element using appendChild .</p>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title border-b-gray-900 border text-xl font-medium">Question-3: What is event delegation
+            in the DOM?</div>
+          <div class="collapse-content">
+            <p>In the DOM, "event delegation" is a JavaScript design pattern where you attach a single event listener to
+              a parent
+              element instead of adding listeners to multiple child elements, allowing the parent to handle events that
+              occur on its
+              children by leveraging the "bubbling" phase of event propagation, where events travel up the DOM tree from
+              the target element to its ancestors; this is particularly useful when dealing with a large number of
+              similar child elements,
+              optimizing performance by reducing the number of event listeners needed.</p>
+          </div>
+        </div>
+      </main>
+    </section>
+  </header>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
